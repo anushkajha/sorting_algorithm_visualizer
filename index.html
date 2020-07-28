@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Algorithm Visualiser</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sorting Algorithm Visualizer</h1>
+      <h4>Made by Anushka Jha</h4>
+    </header>
+    <main>
+      <div class="array-inputs">
+        <label>Select size of the array:</label>
+        <input
+          id="array-size"
+          type="range"
+          min="20"
+          max="150"
+          step="1"
+          value="60"
+        />
+        <label> Select speed of Sorting</label>
+        <input
+          id="array-speed"
+          type="range"
+          min="1"
+          max="5"
+          step="1"
+          value="4"
+        />
+        <button id="generate-array">Generate Array</button>
+      </div>
+
+      <div class="algos">
+        <button class="button">Bubble Sort</button>
+        <button class="button">Selection Sort</button>
+        <button class="button">Insertion Sort</button>
+        <button class="button">Merge Sort</button>
+        <button class="button">Quick Sort</button>
+        <button class="button">Heap Sort</button>
+      </div>
+
+      <div id="array_container"></div>
+    </main>
+
+    <script src="./js/index.js"></script>
+
+    <script src="./js/visuals.js"></script>
+
+    <script src="./js/bubble-sort.js"></script>
+    <script src="./js/selection-sort.js"></script>
+    <script src="./js/insertion-sort.js"></script>
+    <script src="./js/merge-sort.js"></script>
+    <script src="./js/quick-sort.js"></script>
+    <script src="./js/heap-sort.js"></script>
+  </body>
+</html>
